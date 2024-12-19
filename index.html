@@ -1,102 +1,38 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blue Buttons</title>
-    <style>
-	body {
-            margin: 0;
-            padding: 0;
-            background-color: #3498db; /* Blue background color */
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-	h1.title {
-	color: #87ceeb;
-	width: 100%;
-	font-family: inherit;
-	text-align: center;
-    font-size: 400%;
-    margin-bottom: 1px;
-       }
-
-       #passwordInput {
-        color: rgb(255, 255, 255);
-        background-color: #8bc0e4;
-        border-radius: 8px;
-        border: none;
-        width: 20%; /* Takes 80% of the parent container's width */
-    max-width: 500px; /* Ensures it doesn't grow too large on big screens */
-    height: 50px;
-        font-size: 23px;
-        font-family: inherit;
-        margin-top: 0;
-        margin-right: 10px;
-        
-       }
-
-       #passwordInput::placeholder{
-        color: white;
-        font-family: inherit;
-        font-size: 14px;
-        padding-left: 10px;
-
-       }
-       .trybutton {
-        width: 5%; /* Takes 80% of the parent container's width */
-        max-width: 500px; /* Ensures it doesn't grow too large on big screens */
-        height: 50px;
-        border-radius: 8px;
-        background-color: #87ceeb; /* Light blue color for buttons */
-        color: #fff;
-        border: none;
-        cursor: pointer;
-        transition: opacity 0.2s;
-        transition: box-shadow 0.15s;
-
-       }
-       .trybutton:hover{
-        opacity: 0.75;
-        box-shadow: 5px 5px 7.6px rgba(0, 0, 0, 0.15);
-       }
-       .trybutton:active{
-        opacity: 0.8;
-       }
-</style>
-
-
-
+    <title>The love of my life</title>
+    <link rel="stylesheet" href="index.css">
 </head>
-
-
 <body>
-<h1 class="title">Code</h1>
-<input type="text" id="passwordInput" placeholder="Enter code...">
-<button class="trybutton">
-Try
-</button>
+    <h1 class="title">Code</h1>
+    <input type="text" id="passwordInput" placeholder="Enter code...">
+    <button class="trybutton">
+        Try
+    </button>
 
-<script>
-    // Select the input and button elements
-    const input = document.getElementById('passwordInput');
-    const button = document.querySelector('.trybutton');
+    <script>
+        // Select the input and button elements
+        const input = document.getElementById('passwordInput');
+        const button = document.querySelector('.trybutton');
 
-    // Add a click event listener to the button
-    button.addEventListener('click', () => {
-        if (input.value === '11') {
-            // Redirect to start.html if the input is "11"
-            window.location.href = 'start.html';
-        } else {
-            // Optionally show an alert if the input is incorrect
-            alert('Eres un bot');
-        }
-    });
-</script>
+        // Add a click event listener to the button
+        button.addEventListener('click', () => {
+            if (input.value === '11') {
+                // Redirect to start.html if the input is "11"
+                window.location.href = 'start.html';
+            } else {
+                // Optionally show an alert if the input is incorrect
+                alert('Eres un bot');
+            }
+        });
+    </script>
 
 
 </body>
+
 </html>

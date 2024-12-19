@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #3498db;
+    /* Blue background color */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1.title {
+    color: #87ceeb;
+    width: 100%;
+    font-family: inherit;
+    text-align: center;
+    font-size: 400%;
+    margin-bottom: 1px;
+}
+
+#passwordInput {
+    color: rgb(255, 255, 255);
+    background-color: #8bc0e4;
+    border-radius: 8px;
+    border: none;
+    width: 20%;
+    /* Takes 80% of the parent container's width */
+    max-width: 500px;
+    /* Ensures it doesn't grow too large on big screens */
+    height: 50px;
+    font-size: 23px;
+    font-family: inherit;
+    margin-top: 0;
+    margin-right: 10px;
+
+}
+
+#passwordInput::placeholder {
+    color: white;
+    font-family: inherit;
+    font-size: 14px;
+    padding-left: 10px;
+
+}
+
+.trybutton {
+    width: 5%;
+    /* Takes 80% of the parent container's width */
+    max-width: 500px;
+    /* Ensures it doesn't grow too large on big screens */
+    height: 50px;
+    border-radius: 8px;
+    background-color: #87ceeb;
+    /* Light blue color for buttons */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    transition: box-shadow 0.15s;
+
+}
+
+.trybutton:hover {
+    opacity: 0.75;
+    box-shadow: 5px 5px 7.6px rgba(0, 0, 0, 0.15);
+}
+
+.trybutton:active {
+    opacity: 0.8;
+}

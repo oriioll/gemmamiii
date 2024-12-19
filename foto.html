@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            The love of my life
+        </title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="foto.css">
+    </head>
+    <body>
+        <h1 class="pechuga">
+            Las pechugas de la gemma
+        </h1>
+        <form>
+            <fieldset>
+                <legend class="test">
+                    Test de tus pechugas
+                </legend>
+                <label class="azul">
+                    Que tamaño tienen tus pechugas?
+                </label>
+                <input type="radio" id="big" name="size">
+                <label for="big">
+                    Grandes
+                </label>
+                <input type="radio" id="mid" name="size">
+                <label for="mid">
+                    Medianas
+                </label>
+                <input type="radio" id="peke" name="size">
+                <label for="peke">
+                    Pekes
+                </label>
+                <br>
+                <br>
+                <label class="azul">
+                    Hacia donde apuntan tus pezones?
+                </label>
+                <input type="radio" id="up" name="pezon">
+                <label for="up">
+                    Arriba
+                </label>
+                <input type="radio" id="normal" name="pezon">
+                <label for="normal">
+                    Al medio
+                </label>
+                <input type="radio" id="abajo" name="pezon">
+                <label for="abajo">
+                    Abajo
+                </label>
+                <br>
+                <br>
+                <label class="azul">
+                    Que es la Gemma????
+                </label>
+                <input type="text" placeholder="Escribe aqui" id="petita">
+                </fieldset>
+        </form>
+        <br>
+        <button id="submitBtn">
+            Enviar
+        </button>
+        <script>
+            document.getElementById('submitBtn').addEventListener('click', function() {
+                // Obtener las opciones seleccionadas
+                var size = document.querySelector('input[name="size"]:checked');
+                var pezon = document.querySelector('input[name="pezon"]:checked');
+                var petita = document.getElementById('petita').value.toLowerCase(); // Convertir a minúsculas
+
+                // Comprobar si las opciones son correctas
+                if (size && pezon && size.id === 'mid' && pezon.id === 'normal' && petita === 'petita') {
+                    window.location.href = 'reina.html'; // Redirige a reina.html si las condiciones son correctas
+                } else {
+                    alert('Pasa fototeta y t digo la respuesta bebe'); // Muestra un alert si no son correctos
+                }
+            });
+        </script>
+    </body>
+</html>

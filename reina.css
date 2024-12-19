@@ -1,0 +1,13 @@
+body {
+    background-color: #3498db;
+}
+
+h1 {
+    color: #87ceeb;
+    width: 100%;
+    font-family: inherit;
+    text-align: center;
+    font-size: 300%;
+    margin-bottom: 1px;
+    padding-bottom: 50px;
+}
