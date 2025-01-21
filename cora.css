@@ -1,0 +1,41 @@
+body {
+    background-color: #3498db; /* Fondo azul */
+    margin: 0; /* Elimina los márgenes */
+    overflow: hidden; /* Evita el scroll por los corazones animados */
+}
+
+.cora {
+    font-size: 250px; /* Tamaño del corazón principal */
+    text-align: center;
+    margin-top: 14%;
+    cursor: pointer; /* Muestra el puntero al pasar sobre el corazón */
+    user-select: none; /* Evita seleccionar el texto */
+    color: #ffffff; /* Color blanco para el corazón principal */
+}
+
+#container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Permite clics a través del contenedor */
+}
+
+.heart {
+    position: absolute;
+    font-size: 30px; /* Tamaño base de los corazones generados */ /* Color blanco para los corazones animados */
+    animation: floatUp 3s ease-out forwards; /* Animación de flotación */
+    opacity: 0; /* Inicialmente invisible */
+}
+
+@keyframes floatUp {    
+    0% {
+        transform: translateY(0) scale(1); /* Posición inicial */
+        opacity: 1; /* Totalmente visible */
+    }
+    100% {
+        transform: translateY(-200px) scale(0.5); /* Sube y se encoge */
+        opacity: 0; /* Se desvanece */
+    }
+}

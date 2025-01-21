@@ -28,8 +28,17 @@
             padding: 10px 20px;
             margin: 10px;
             border-radius: 10px; /* Rounded shape for buttons */
+            position: relative;
         }
 
         button.title-button:hover {
             cursor: default;
         }
+
+        .hover:hover {
+            opacity: 0.9;
+            height: 50px;
+            width: 150px;
+            content: "Gemma tetas gordas";
+        }
+

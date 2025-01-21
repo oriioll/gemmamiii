@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            OI
+        </title>
+        <link rel="stylesheet" href="cora.css">
+    </head>
+    <body>
+        <h1 class="cora" id="main-heart">
+            &#128153; <!-- Corazón rojo (puedes cambiarlo) -->
+        </h1>
+        <div id="container"></div> <!-- Contenedor para los corazones animados -->
+
+        <script>
+            // Seleccionamos el corazón principal y el contenedor
+            const mainHeart = document.getElementById("main-heart");
+            const container = document.getElementById("container");
+
+            // Agregamos un evento de clic al corazón principal
+            mainHeart.addEventListener("click", () => {
+                for (let i = 0; i < 20; i++) { // Genera 10 corazones por clic
+                    createHeart();
+                }
+            });
+
+            // Función para crear un corazón animado
+            function createHeart() {
+                const heart = document.createElement("span"); // Crea un elemento <span>
+                heart.className = "heart"; // Le asigna la clase "heart"
+                heart.innerHTML = "&#128153;"; // Corazón azul normal
+
+                // Posición inicial aleatoria
+                const x = Math.random() * window.innerWidth; // Posición horizontal
+                const y = Math.random() * window.innerHeight; // Posición vertical inicial
+
+                heart.style.left = `${x}px`; // Establece la posición horizontal
+                heart.style.top = `${y}px`; // Establece la posición vertical
+                heart.style.fontSize = `${Math.random() * 30 + 20}px`; // Tamaño aleatorio
+
+                container.appendChild(heart); // Agrega el corazón al contenedor
+
+                // Elimina el corazón del DOM después de la animación
+                heart.addEventListener("animationend", () => {
+                    heart.remove();
+                });
+            }
+        </script>
+    </body>
+</html>

@@ -27,13 +27,24 @@
     <button>Ets agradable i maja</button>
     <button>M'entens</button>
     <button>Em fas sentir el millor</button>
-    <button>T'estimo Gemma.</button>
+    <button class="hover">T'estimo Gemma.</button>
 
     <script>
         // Añadimos un evento al botón para redirigir
         document.getElementById('titleButton').addEventListener('click', function() {
             window.location.href = 'secret.html'; // Redirige a secret.html
         });
+
+  
+    const boton = document.querySelector('.hover');
+
+boton.addEventListener('mouseover', () => {
+    boton.textContent = 'Vaya tetorras separadas';
+});
+
+boton.addEventListener('mouseout', () => {
+    boton.textContent = 'T estimo gemma';
+});
     </script>
 </body>
 </html>

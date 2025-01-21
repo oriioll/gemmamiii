@@ -17,16 +17,18 @@
 
     <script>
         // Select the input and button elements
-        const input = document.getElementById('passwordInput');
-        const button = document.querySelector('.trybutton');
+        const input = document.getElementById('input');
+        const button = document.getElementById('button');
 
-        // Add a click event listener to the button
         button.addEventListener('click', () => {
             if (input.value === '11') {
-                // Redirect to start.html if the input is "11"
+                // Redirige a start.html si el valor es "11"
                 window.location.href = 'start.html';
+            } else if (input.value === 'oi') {
+                // Redirige a otra página si el valor es "xxxxx"
+                window.location.href = 'cora.html';
             } else {
-                // Optionally show an alert if the input is incorrect
+                // Muestra una alerta si el valor no coincide con ninguno
                 alert('Eres un bot');
             }
         });
