@@ -16,10 +16,16 @@
 
     <script>
         // Selecciona el input y el botón correctamente
-        const input = document.getElementById('passwordInput'); // Cambié el id para coincidir con el HTML
-        const button = document.querySelector('.trybutton'); // Cambié el selector de id a clase
+        const input = document.getElementById('passwordInput'); // El id del input
+        const button = document.querySelector('.trybutton'); // Clase del botón
+
+        // Verifica si se han seleccionado correctamente los elementos
+        console.log(input, button); // Esto debería mostrar los elementos en la consola
 
         button.addEventListener('click', () => {
+            // Verifica si se ha obtenido el valor del input
+            console.log('Input value:', input.value); // Esto debería mostrar el valor del input
+
             if (input.value === '11') {
                 // Redirige a start.html si el valor es "11"
                 window.location.href = 'start.html';
