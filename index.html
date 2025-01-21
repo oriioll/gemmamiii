@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,16 +15,16 @@
     </button>
 
     <script>
-        // Select the input and button elements
-        const input = document.getElementById('input');
-        const button = document.getElementById('button');
+        // Selecciona el input y el botón correctamente
+        const input = document.getElementById('passwordInput'); // Cambié el id para coincidir con el HTML
+        const button = document.querySelector('.trybutton'); // Cambié el selector de id a clase
 
         button.addEventListener('click', () => {
             if (input.value === '11') {
                 // Redirige a start.html si el valor es "11"
                 window.location.href = 'start.html';
             } else if (input.value === '69') {
-                // Redirige a otra página si el valor es "xxxxx"
+                // Redirige a otra página si el valor es "69"
                 window.location.href = 'cora.html';
             } else {
                 // Muestra una alerta si el valor no coincide con ninguno
@@ -33,8 +32,5 @@
             }
         });
     </script>
-
-
 </body>
-
 </html>
