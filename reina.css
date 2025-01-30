@@ -11,3 +11,27 @@ h1 {
     margin-bottom: 1px;
     padding-bottom: 50px;
 }
+
+.divboton {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+
+}
+.boton {
+cursor: pointer;
+border-radius: 10px;
+background-color: #87ceeb;
+font-size: 15px;
+border: 2px solid transparent;
+padding: 15px 35px;
+transition: .3s ease;
+}
+.boton:hover {
+border: 2px solid #87ceeb;
+box-sizing: 0 0 5px #87ceeb;
+color: #87ceeb;
+background-color: transparent;
+}

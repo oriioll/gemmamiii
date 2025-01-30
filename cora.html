@@ -12,7 +12,11 @@
         </h1>
         <div id="container"></div> <!-- Contenedor para los corazones animados -->
         <h1 class="frase">Estic enamorat de tu gemma, ets la perfeccio personificada. Gracies per existir</h1>
-
+        <div class="backboton">
+        <button id="back" class="boton">
+            Go back
+        </button>
+    </div>
         <script>
             // Seleccionamos el corazón principal y el contenedor
             const mainHeart = document.getElementById("main-heart");
@@ -46,6 +50,9 @@
                     heart.remove();
                 });
             }
+            document.getElementById('back').addEventListener('click', function() {
+            window.location.href = 'index.html'; // Redirige a index.html
+        });
         </script>
     </body>
 </html>
